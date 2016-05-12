@@ -5,18 +5,26 @@
     <title>Nails by Danica</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="../vendors/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../styles/stylesheet.css">
-    <script type="text/javascript" src="../vendors/js/angular.min.js"></script>
-    <script type="text/javascript" src="../vendors/js/angular-route.min.js"></script>
-    <script type="text/javascript" src="../vendors/js/angular-animate.min.js"></script>
-    <script type="text/javascript" src="../scripts/clientapp.js"></script>
+    <link rel="stylesheet" href="./vendors/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./styles/stylesheet.css">
+    <script type="text/javascript" src="./vendors/js/angular.min.js"></script>
+    <script type="text/javascript" src="./vendors/js/angular-route.min.js"></script>
+    <script type="text/javascript" src="./vendors/js/angular-animate.min.js"></script>
+    <script type="text/javascript" src="./scripts/clientapp.js"></script>
 </head>
 
 <body ng-app="myApp">
+<div class="container">
+    <div class="row">
+        <div class="col-md-6-offset-4">
+            <img src="./img/danica_logo.png" alt="Nails by Danica Logo" height="350" width="700">
+        </div>
+    </div>
+</div>
+
 <div ng-controller='HomeController'>
     <div ng-include="'./templates/header.html'"></div>
-    </div>
+</div>
 </body>
 </html>
 
