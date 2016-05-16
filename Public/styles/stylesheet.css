@@ -2,5 +2,16 @@
     background-color: #FF1532;
     background-image: none;
     background-repeat: no-repeat;
+    position: relative;
+    top: -84px;
 }
 
+.navbar {
+    z-index: 0;
+}
+
+.img-responsive {
+    position: relative;
+    left: -60px;
+    z-index: 1;
+}
