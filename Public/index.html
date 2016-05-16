@@ -6,7 +6,12 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./vendors/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="stylesheet" href="./styles/stylesheet.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./vendors/js/ui-bootstrap.min.js"></script>
+    <script type="text/javascript" src="./vendors/js/ui-bootstrap-tpls.min.js"></script>
     <script type="text/javascript" src="./vendors/js/angular.min.js"></script>
     <script type="text/javascript" src="./vendors/js/angular-route.min.js"></script>
     <script type="text/javascript" src="./vendors/js/angular-animate.min.js"></script>
@@ -21,6 +26,25 @@
         </div>
     </div>
 </div>
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#aboutme">About Danica</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#thesalon">The Salon</a></li>
+                <li><a href="#myblog">Danica's Blog</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
 
 <div ng-controller='HomeController'>
     <div ng-include="'./templates/header.html'"></div>
