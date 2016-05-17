@@ -29,9 +29,9 @@
     z-index: 1;
 }
 
-@media (min-width: 43.75em) {
+@media (max-width: 43.75em) and  (min-width: 41em) {
     .logo-text {
-        font-size: 100%;
+        font-size: 50%;
     }
 }
 
@@ -40,8 +40,11 @@
     .logo-text {
         display: none;
     }
-    .header
+    .header {
         padding-top: 6em;
+    }
+    .logo {
+        left: -20px;
     }
 }
 
