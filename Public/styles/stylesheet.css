@@ -1,6 +1,50 @@
+.header {
+    position: relative;
+    top: -100px;
+    overflow: visible;
+}
+.logo-text {
+    position: relative;
+    bottom: -100px;
+    z-index: 1;
+    font-size: 150%;
+    line-height: 1.105em;
+}
+
 .navbar-default {
     background-color: #FF1532;
     background-image: none;
     background-repeat: no-repeat;
+    position: relative;
+    top: -84px;
+}
+
+.navbar {
+    z-index: 0;
+}
+
+.logo {
+    position: relative;
+    left: -40px;
+    z-index: 1;
+}
+
+@media (max-width: 43.75em) and  (min-width: 41em) {
+    .logo-text {
+        font-size: 50%;
+    }
+}
+
+
+@media (max-width: 40em) {
+    .logo-text {
+        display: none;
+    }
+    .header {
+        padding-top: 6em;
+    }
+    .logo {
+        left: -20px;
+    }
 }
 
