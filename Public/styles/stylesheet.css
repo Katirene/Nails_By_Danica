@@ -1,8 +1,14 @@
+.header {
+    position: relative;
+    top: -100px;
+    overflow: visible;
+}
 .logo-text {
     position: relative;
-    bottom: -50px;
+    bottom: -100px;
     z-index: 1;
     font-size: 150%;
+    line-height: 1.105em;
 }
 
 .navbar-default {
@@ -19,7 +25,23 @@
 
 .logo {
     position: relative;
-    left: -60px;
+    left: -40px;
     z-index: 1;
+}
+
+@media (min-width: 43.75em) {
+    .logo-text {
+        font-size: 100%;
+    }
+}
+
+
+@media (max-width: 40em) {
+    .logo-text {
+        display: none;
+    }
+    .header
+        padding-top: 6em;
+    }
 }
 
