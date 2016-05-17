@@ -17,8 +17,8 @@ myApp.config(['$routeProvider', function($routeProvider) {
             //controller: 'MyBlogController'
         })
         .when('/thesalon', {
-            //templateUrl: './templates/thesalon.html',
-            //controller: 'TheSalonController'
+            templateUrl: '/templates/thesalon.html',
+            controller: 'TheSalonController'
         })
         .otherwise({
             redirectTo: '/home'
