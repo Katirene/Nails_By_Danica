@@ -1,0 +1,14 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            <carousel interval="myInterval">
+                <slide ng-repeat="slide in slides" active="active" index="$index">
+                    <img ng-src="{{slide.image}}" style="margin:auto;" />
+                    <div class="carousel-caption">
+                        <h4>Slide {{$index+1}}</h4>
+                    </div>
+                </slide>
+            </carousel>
+        </div>
+    </div>
+</div>
