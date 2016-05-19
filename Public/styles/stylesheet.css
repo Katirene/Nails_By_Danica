@@ -24,6 +24,14 @@ html {
     border-top: 0px; /*Override bootstrap's 1px gray border*/
 }
 
+.navbar-default .navbar-toggle .icon-bar  {
+    background-color: white;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: inherit;
+}
+
 .header > img.logo {
     position: relative;
     width: 400px;
