@@ -1,50 +1,69 @@
-.header {
-    position: relative;
-    top: -100px;
-    overflow: visible;
+body {
+    width: 100%;
+    margin-bottom: 60px;
 }
-.logo-text {
-    position: relative;
-    bottom: -100px;
-    z-index: 1;
-    font-size: 150%;
-    line-height: 1.105em;
+
+html {
+    min-height: 100%;
+}
+
+.header {
+    overflow: visible;
 }
 
 .navbar-default {
     background-color: #FF1532;
     background-image: none;
     background-repeat: no-repeat;
-    position: relative;
-    top: -84px;
 }
 
 .navbar {
-    z-index: 0;
+    margin-top: -55px;
 }
 
-.logo {
+.navbar li > a {
+    color: white;
+}
+
+.navbar-default .navbar-collapse {
+    border-top: 0px;
+}
+
+.header > img.logo {
     position: relative;
-    left: -40px;
+    width: 400px;
     z-index: 1;
 }
 
+.footer {
+    position: absolute;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+    background-color: #FF1532;
+}
+
+.footer-container > p {
+    text-align: center;
+    line-height: 100%;
+
+}
+
+body > .footer-container {
+    padding-top: 60px;
+}
+
 @media (max-width: 43.75em) and  (min-width: 41em) {
-    .logo-text {
-        font-size: 50%;
-    }
+
 }
 
 
 @media (max-width: 40em) {
-    .logo-text {
-        display: none;
-    }
     .header {
         padding-top: 6em;
     }
     .logo {
-        left: -20px;
+        /*left: -20px;*/
     }
 }
 
