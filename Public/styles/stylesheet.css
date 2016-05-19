@@ -1,50 +1,55 @@
-.header {
-    position: relative;
-    top: -100px;
-    overflow: visible;
+body {
+    width: 100%;
 }
-.logo-text {
-    position: relative;
-    bottom: -100px;
-    z-index: 1;
-    font-size: 150%;
-    line-height: 1.105em;
+
+html {
+    min-height: 100%;
 }
 
 .navbar-default {
     background-color: #FF1532;
     background-image: none;
     background-repeat: no-repeat;
-    position: relative;
-    top: -84px;
 }
 
 .navbar {
-    z-index: 0;
+    margin-top: -55px;
 }
 
-.logo {
+.navbar li > a {
+    color: white;
+}
+
+.navbar-default .navbar-collapse {
+    border-top: 0px; /*Override bootstrap's 1px gray border*/
+}
+
+.navbar-default .navbar-toggle .icon-bar  {
+    background-color: white;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: inherit;
+}
+
+.header > img.logo {
     position: relative;
-    left: -40px;
+    width: 400px;
     z-index: 1;
 }
 
+.footer-container > p {
+    text-align: center;
+}
+
 @media (max-width: 43.75em) and  (min-width: 41em) {
-    .logo-text {
-        font-size: 50%;
-    }
+
 }
 
 
 @media (max-width: 40em) {
-    .logo-text {
-        display: none;
-    }
     .header {
         padding-top: 6em;
-    }
-    .logo {
-        left: -20px;
     }
 }
 
