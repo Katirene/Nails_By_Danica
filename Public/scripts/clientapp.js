@@ -4,6 +4,9 @@ console.log('We are in client-app.js AngularLand');
 myApp.config(['$routeProvider', function($routeProvider) {
     console.log('Hitting Route Provider');
     $routeProvider
+        .when('/home', {
+            templateUrl: './templates/home.html'
+        })
         .when('/aboutme', {
             //templateUrl: './templates/aboutme.html',
             //controller: 'AboutMeController'
