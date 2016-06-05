@@ -12,8 +12,8 @@ myApp.config(['$routeProvider', function($routeProvider) {
             //controller: 'AboutMeController'
         })
         .when('/services', {
-            //templateUrl: './templates/services.html',
-            //controller: 'ServicesController'
+            templateUrl: './templates/services.html',
+            controller: 'ServicesController'
         })
         .when('/myblog', {
             //templateUrl: './templates/myblog.html',
