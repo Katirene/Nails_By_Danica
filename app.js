@@ -1,7 +1,11 @@
 var express = require('express');
 var app = express();
 var bodyParser = require('body-parser');
-//var mongoose = require('mongoose');
+var mongoose = require('mongoose');
+var Schema = mongoose.Schema;
+
+mongoose.connect('mongodb://localhost/danica');
+
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
@@ -9,10 +13,10 @@ app.use(bodyParser.urlencoded({extended: true}));
 
 // Serve back static files
 app.use(express.static('public'));
-app.use(express.static('public/views'));
-app.use(express.static('public/assets'));
-app.use(express.static('public/assets/scripts'));
-app.use(express.static('public/assets/styles'));
+app.use(express.static('public/img'));
+app.use(express.static('public/scripts'));
+app.use(express.static('public/templates'));
+app.use(express.static('public/styles'));
 app.use(express.static('public/vendors'));
 
 

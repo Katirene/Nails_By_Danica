@@ -38,7 +38,7 @@ html {
     z-index: 1;
 }
 
-.jumbotron {
+.jumbotron.services-table {
     position:relative;
     width: 100%;
     height: 3000px;
