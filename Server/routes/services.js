@@ -18,7 +18,7 @@ mongoose.model(
 var Service = mongoose.model('Service');
 
 
-router.get('/service', function(req, res) {
+router.get('/', function(req, res) {
     console.log("inside services.js");
     Service.find({}, function(err, data) {
         if(err) {

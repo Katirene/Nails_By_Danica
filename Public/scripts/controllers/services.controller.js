@@ -19,7 +19,19 @@ myApp.controller('ServicesController', ['$scope', 'ServicesFactory', function($s
     };
 
     $scope.ServicesFactory.factoryGetPrices().then(function() {
-        console.log(response);
+        console.log($scope.ServicesFactory.price.toepolishChange);
+        $scope.price.nailpolishChange = $scope.ServicesFactory.price.nailpolishChange;
+        $scope.price.naturalManicure = $scope.ServicesFactory.price.naturalManicure;
+        $scope.price.nailCallus = $scope.ServicesFactory.price.nailCallus;
+        $scope.price.frenchManicure = $scope.ServicesFactory.price.frenchManicure;
+        $scope.price.manicureGel = $scope.ServicesFactory.price.manicureGel;
+        $scope.price.IBS = $scope.ServicesFactory.price.IBS;
+        $scope.price.toepolishChange = $scope.ServicesFactory.price.toepolishChange;
+        $scope.price.spaPedicure = $scope.ServicesFactory.price.spaPedicure;
+        $scope.price.toeCallus = $scope.ServicesFactory.price.toeCallus;
+        $scope.price.toefrenchManicure = $scope.ServicesFactory.price.toefrenchManicure;
+        $scope.price.pedicureGel = $scope.ServicesFactory.price.pedicureGel;
+        $scope.price.advancedPedicure = $scope.ServicesFactory.price.advancedPedicure;
     });
 
 
