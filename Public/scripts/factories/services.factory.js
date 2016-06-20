@@ -1,14 +1,23 @@
 myApp.factory('ServicesFactory', ['$http', function($http) {
 
+    var price;
 
-    function getPrices() {
+    var getPrices = function() {
         console.log('getting Prices');
-        $http.get('/services').then(function(response) {
-            console.log(response);
+        var promise = $http.get('/services').then(function(err, response) {
+            if (err) {
+                console.log(err);
+            }
+            else {
+                console.log(response);
+            }
         });
-    }
+        return promise;
+    };
 
     return {
-        getPrices: getPrices()
+        factoryGetPrices: function() {
+            return getPrices();
+        }
     }
 }]);
