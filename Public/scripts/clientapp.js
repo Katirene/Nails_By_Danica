@@ -1,6 +1,7 @@
 var myApp = angular.module("myApp", ['ngRoute', 'ui.bootstrap']);
 console.log('We are in client-app.js AngularLand');
 
+
 myApp.config(['$routeProvider', function($routeProvider) {
     console.log('Hitting Route Provider');
     $routeProvider
@@ -8,7 +9,7 @@ myApp.config(['$routeProvider', function($routeProvider) {
             templateUrl: './templates/home.html'
         })
         .when('/aboutme', {
-            //templateUrl: './templates/aboutme.html',
+            templateUrl: './templates/about.html'
             //controller: 'AboutMeController'
         })
         .when('/services', {
