@@ -1,0 +1,53 @@
+<div class="container services-table animated fadeIn">
+    <div class="jumbotron vertical-center">
+        <div class="container-fluid transparent center">
+            <div ng-controller="EditableTableCtrl">
+                <form editable-form name="tableform" onaftersave="saveTable()" oncancel="cancel()">
+
+                    <!-- table -->
+                    <table class="table table-bordered table-hover table-condensed">
+                        <tr style="font-weight: bold">
+                            <td style="width:40%">Service</td>
+                            <td style="width:30%">Price</td>
+                            <td style="width:30%">
+                                <span ng-show="tableform.$visible">
+                                Action</span></td>
+                        </tr>
+                        <tr ng-repeat="user in users | filter:filterUser">
+                            <td>
+                                <!-- editable username (text with validation) -->
+                              <span editable-text="user.service" e-form="tableform">
+                                    <!--onbeforesave="updateService($scope.user.service.$data, user._id)">-->
+                                {{ user.service || 'empty' }}
+                              </span>
+                            </td>
+                            <td>
+                                <!-- editable price (text with validation) -->
+                              <span editable-text="user.price" e-form="tableform">
+                                    <!--onbeforesave="update($data, user._id)">-->
+                                ${{ user.price || 'empty' }}
+                              </span>
+                            </td>
+                            <td><button type="button" ng-show="tableform.$visible" ng-click="deleteUser(user._id)"
+                                        class="btn btn-danger pull-right">Del</button></td>
+                        </tr>
+                    </table>
+
+                <!-- buttons -->
+                <div class="btn-edit">
+                    <button type="button" class="btn btn-default" ng-show="!tableform.$visible"
+                            ng-click="tableform.$show()">
+                            edit
+                    </button>
+                </div>
+                <div class="btn-form" ng-show="tableform.$visible">
+                    <button type="button" ng-disabled="tableform.$waiting" ng-click="addUser()" class="btn btn-default pull-right">add row</button>
+                    <button type="submit" ng-disabled="tableform.$waiting" class="btn btn-primary">save</button>
+                    <button type="button" ng-disabled="tableform.$waiting" ng-click="tableform.$cancel()" class="btn btn-default">cancel</button>
+                </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

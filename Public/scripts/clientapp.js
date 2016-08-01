@@ -1,4 +1,4 @@
-var myApp = angular.module("myApp", ['ngRoute', 'ui.bootstrap']);
+var myApp = angular.module("myApp", ['ngRoute', 'ui.bootstrap', 'xeditable']);
 console.log('We are in client-app.js AngularLand');
 
 
@@ -23,6 +23,10 @@ myApp.config(['$routeProvider', function($routeProvider) {
         .when('/thesalon', {
             templateUrl: '/templates/thesalon.html',
             controller: 'TheSalonController'
+        })
+        .when('/admin', {
+            templateUrl: '/templates/admin.html',
+            controller: 'EditableTableCtrl'
         })
         .otherwise({
             redirectTo: '/home'

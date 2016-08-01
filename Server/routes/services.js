@@ -30,4 +30,16 @@ router.get('/', function(req, res) {
 
 });
 
+router.post('/', function(req, res) {
+    console.log("I am posting services", req.body);
+    //Service.find({}, function(err, data) {
+    //    if(err) {
+    //        console.log('ERR ', err);
+    //    }
+    //    console.log(data);
+    //    res.send(data);
+    //});
+
+});
+
 module.exports = router;
