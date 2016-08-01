@@ -5,7 +5,9 @@ var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 var dotenv = require('dotenv');
 
-mongoose.connect('MONGODB_URI');
+var mongo_uri = process.env.MONGOBD_URI;
+
+mongoose.connect(mongo_uri);
 mongoose.model(
     'Service',
     new Schema({
