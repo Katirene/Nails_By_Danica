@@ -3,8 +3,9 @@ var router = express.Router();
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
+var dotenv = require('dotenv');
 
-mongoose.connect('mongodb://localhost/danica');
+mongoose.connect('MONGODB_URI');
 mongoose.model(
     'Service',
     new Schema({
